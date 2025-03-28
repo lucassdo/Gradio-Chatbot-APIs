@@ -7,7 +7,6 @@ from openai import OpenAI
 import gradio as gr
 from collections import defaultdict
 import anthropic
-from collections import defaultdict
 
 # Initialization
 
@@ -21,7 +20,7 @@ else:
 
 perplexity_api_key = os.getenv('PERPLEXITY_API_KEY')
 if perplexity_api_key:
-    print(f"Perplexity API Key exists and begins {perplexity_api_key[:8]}")
+    print(f"Perplexity API Key exists and begins {perplexity_api_key[:5]}")
 else:
     print("Perplexity API Key not set")
 
